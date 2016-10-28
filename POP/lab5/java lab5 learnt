@@ -1,0 +1,22 @@
+Lessons learnt in java lab5
+
+1. while declaring interface dont use public as mentioned below
+		public interface a{
+			//some method
+		}
+
+because by default every interface has public as its access specifier,but if you mention that you will get an error:<identifier expected>
+		public interface a{
+			//some method
+		}
+
+2.in the class that is implementing the interface compusorily write the <access specifier> along with <return type> for the methods of interfaces defined in the class;
+
+3.consider four interfaces whose hierarchy is like                   a
+                     /   \
+                    b     c
+                     \   /
+                       d
+in this case b and c extends a {IMP:dont define the functions of a in B and C}
+
+4.all the methods inside an interface are public by default
