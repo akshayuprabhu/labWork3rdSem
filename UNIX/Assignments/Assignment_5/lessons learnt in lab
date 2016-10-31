@@ -1,0 +1,26 @@
+1.  string comparisio in bash can be done .
+    if [[ "String1" == "String2" ]]; then
+        #do this
+    fi
+
+    but,if you have to compare strings which are already stored in some variable
+    then #dont put the Double Quotes for the variables
+
+        if [[ String1 == String2 ]]; then
+            #statements
+        fi
+
+2.if you have to store all the files in the current directory
+    in a file ,then use :
+                        $ls -p | grep -v / > listf
+3.to put all the directories in a  file thjen use:
+                        $ls -d */ > listd
+
+4.to check if the file is in directory or not use:
+                    $if [[ -f <filename> ]]; then
+                        #statements
+                    fi
+4.to check if the given directory is in the current directory or not use:
+                    $if [[ -d <directoryname> ]]; then
+                    #statements
+                    fi

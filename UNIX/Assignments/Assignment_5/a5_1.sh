@@ -1,0 +1,1 @@
+#!/bin/bashfor FILE in *do	if [ -r $FILE -a -w $FILE ]; then		#statements		echo "$FILE"	fidone	
